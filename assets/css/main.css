@@ -9,6 +9,10 @@
 */
 
 /*-------------------cambios -------------------------*/
+.parraforoboto{
+	color: green;
+}
+
 #titulosanito{
 	font-family: 'Roboto', sans-serif;
 	color:black;
