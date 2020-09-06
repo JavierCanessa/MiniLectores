@@ -16,11 +16,19 @@
 }
 
 
-#h1bienvenido{
+.h1bienvenido{
 	font-family: 'Chelsea Market', cursive;
 	color:#2d2153;
 	font-size:220%;
 }
+.h1bienvenido2{
+    font-family: 'Chelsea Market', cursive;
+	color:#fff;
+    font-size:180%;
+    margin-bottom: 0%;
+    margin-right: 61%; 
+}
+
 #parrafoBienvenido{
 	font-family: 'Roboto', sans-serif;
 	color:white;
