@@ -10,7 +10,7 @@
 
 /*-------------------cambios -------------------------*/
 .parraforoboto{
-	color: green;
+	color: rgb(255, 255, 255);
 }
 
 #titulosanito{
@@ -28,14 +28,16 @@
 	font-family: 'Roboto', sans-serif;
 	color:white;
 	font-size: 75%;
-	text-align: justify;
+	
 }
 
 #logo{
 	color:#2d2153;
 }
 
-/*--------------FIN Tocho tu papi---------------------------*/
+
+
+/*--------------FIN ---------------------------*/
 
 html, body, div, span, applet, object,
 iframe, h2, h3, h4, h5, h6, blockquote,
