@@ -2118,7 +2118,8 @@ input, select, textarea {
 	.features {
 		position: relative;
 		overflow: hidden;
-		background: #fff;
+		/*background: #fff;*/
+		color:black;
 		text-align: center;
 		padding: 6em 0;
 	}
