@@ -199,7 +199,7 @@ button,
     input[type="reset"].alt,
     button.alt,
     .button.alt {
-        background: #6746d33;
+        background: #6746d3;
     }
 
         input[type="button"].alt:hover,
@@ -359,8 +359,8 @@ button,
     -webkit-appearance: none;
     position: relative;
     display: inline-block;
-    background: #2d2153;
-    color: #fff !important;
+    background: #6746d3;
+    color: #ffffff !important;
     text-transform: uppercase;
     border-radius: 4px;
     border: 0;
@@ -390,7 +390,7 @@ button,
     input[type="reset"]:hover,
     button:hover,
     .button:hover {
-        background: #6746d3;
+        background: #ffa920;
     }
 
     input[type="button"]:active,
@@ -406,7 +406,7 @@ button,
     input[type="reset"].alt,
     button.alt,
     .button.alt {
-        background: #6746d33;
+        background: #6746d3;
     }
 
         input[type="button"].alt:hover,
