@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Fredoka+One&family=Montserrat&family=Roboto&display=swap"); ()
 
 
-
 /* Page Wrapper */
 
 #page-wrapper > section {
@@ -446,6 +445,7 @@ button,
 
     .features p {
         text-align: center;
+        font-family: 'roboto';
     }
 
     .features ul.actions {
