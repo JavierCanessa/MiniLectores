@@ -293,11 +293,11 @@
         /*Elimino el copyright de compra*/
         var copys2 = document.getElementById('copys2');
         window.addEventListener( "resize", function(){
-            if ( window.outerWidth < 800 ||  window.outerHeight < 800 ){ copys2.style.display='none'}
+            if ( window.innerWidth < 800 ||  window.innerHeight < 800 ){ copys2.style.display='none'}
             else{}
         });
         window.addEventListener( "resize", function(){ 
-            if ( window.outerWidth > 800 ||  window.outerHeight > 800 ) { copys2.style.display='block' }
+            if ( window.innerWidth > 800 ||  window.innerHeight > 800 ) { copys2.style.display='block' }
         });
 			
 
@@ -305,14 +305,14 @@
         var list4 =  document.getElementsByClassName('esconder4');
         
         window.addEventListener( "resize", function(){
-            if ( window.outerWidth < 800 ||  window.outerHeight < 800 ){ 
+            if ( window.innerWidth < 800 ||  window.innerHeight < 800 ){ 
                 for (var i=0; list4.length;i++ ){
                     list4[i].style.display='none'
                 }
             }else{}
         });
         window.addEventListener( "resize", function(){ 
-            if ( window.outerWidth > 800 ||  window.outerHeight > 800 ){ 
+            if ( window.innerWidth > 800 ||  window.innerHeight > 800 ){ 
                 for (var i=0; list4.length;i++ ){
                     list4[i].style.display=''
                 }

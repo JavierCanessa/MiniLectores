@@ -296,11 +296,11 @@
 					/*Del index*/
 					var copy = document.getElementById('copys');
 					window.addEventListener( "resize", function(){
-						if ( window.outerWidth < 800 ||  window.outerHeight < 800 ){ copy.style.display='none'}
+						if ( window.innerWidth < 800 ||  window.innerHeight < 800 ){ copy.style.display='none'}
 						else{}
 					});
 					window.addEventListener( "resize", function(){ 
-						if ( window.outerWidth > 800 ||  window.outerHeight > 800 ) { copy.style.display='block' }
+						if ( window.innerWidth > 800 ||  window.innerHeight > 800 ) { copy.style.display='block' }
 					});
 				</script> 
 
