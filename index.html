@@ -269,9 +269,9 @@
 				</section>
 
 			<!--Footer naranja me falta hacerlo responsive -->
-				<div  class="navabajo">
+				<div class="navabajo">
 		
-					<ul style="color:black;margin-left: 20%;margin-right: 10%;margin-top: 0%;">
+					<ul id="listadesaparece" style="color:black;margin-left: 20%;margin-right: 10%;margin-top: 0%;">
 						<li style="font-family: 'Fredoka One', cursive;color:white"> <span style="color:#2d2153" >Mini</span> Lectores </li>
 			
 						<li>
@@ -285,7 +285,36 @@
 						<li><img style="width: 70%;" src="./images/redes.png" ></li><br>
 						<li style="color: #ffffff;font-size: 70%;margin-left: 30%;margin-right: 30%;margin-top: 0%;" >Copyright Mini Lectores. Todos los derechos reservados</li>
 					</ul>
+
+					<!--Div Minilectores escondido-->
+					<div id="divresponsive" style="display: none;" >
+						<script>
+							let listadesaparece = document.getElementById('listadesaparece');
+							let divresponsive = document.getElementById('divresponsive');
+							if ( window.outerHeight < 700 && window.outerHeight < 700 ){
+								divresponsive.style.display='contents';
+								listadesaparece.style.display='none';
+							}else{}
+		
+						</script>
+							
+						<div>
+	
+							<ul style="color:black;margin-left: 30%;margin-right: 30%;margin-top: 0%;list-style: none;">
+								<li style="font-family: 'Fredoka One', cursive;color:#fff;"> <span style="color:#2d2153" >Mini</span> Lectores </li>
+							</ul>
+	
+						</div>
+	
+					</div>
+					
 				</div>
+
+
+				
+				
+
+				
 
 		
 
