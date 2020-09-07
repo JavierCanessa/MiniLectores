@@ -11,12 +11,13 @@
 <body style="background-color: white;">
     
     <!-- Navegacion botnoes naranja -->
-    <div  id="nav"> 
+    <div  class="navabajo"> 
         
             <ul style="color:black;margin-left: 17%;margin-top: 0%;">
-                <li style="font-family: 'Fredoka One', cursive;color:white;font-size: 150%;margin-top: 1%;"> <span style="color:#2d2153" >Mini</span> Lectores </li>
+                <li style="font-family: 'Fredoka One', cursive;color:white;font-size: 150%;margin-top: 2%;"> <span style="color:#2d2153" >Mini</span> Lectores </li>
 
-                <li>
+                
+                <li class="esconder4">
                     <a style="color:white"  style="font-family: 'Roboto', sans-serif;" href="" ><span>Combos</span></a>
                     <ul>
                         <li><a href="#">Lorem ipsum dolor</a></li>
@@ -32,12 +33,12 @@
                         </li>
                         <li><a href="#">Veroeros feugiat</a></li>
                     </ul>
-                </li>
+                </li class="esconder4">
 
-                <li><a style="color:white" style="font-family: 'Roboto', sans-serif;" href=""><span>Como Funciona</span></a></li>
-                <li><a style="color:white" style="font-family: 'Roboto', sans-serif;" href=""><span>Mandanos tus fotos</span></a></li>
-                <li><a style="color:white" style="font-family: 'Roboto', sans-serif;" href="#formularito"><span>Contacto</span></a></li>
-                <li><a style="color:white" style="font-family: 'Roboto', sans-serif;" href=""><span>LOGIN</span></a></li>
+                <li class="esconder4"><a style="color:white" style="font-family: 'Roboto', sans-serif;" href=""><span>Como Funciona</span></a></li>
+                <li class="esconder4"><a style="color:white" style="font-family: 'Roboto', sans-serif;" href=""><span>Mandanos tus fotos</span></a></li>
+                <li class="esconder4"><a style="color:white" style="font-family: 'Roboto', sans-serif;" href="#formularito"><span>Contacto</span></a></li>
+                <li class="esconder4"><a style="color:white" style="font-family: 'Roboto', sans-serif;" href=""><span>LOGIN</span></a></li>
             </ul>
         
     </div>
@@ -268,9 +269,9 @@
    
 
     <!--Footer naranja me falta hacerlo responsive -->
-    <div  id="nav" class="container">
+    <div  class="navabajo" >
         
-        <ul style="color:black;margin-left: 20%;margin-right: 15%;margin-top: 0%;">
+        <ul style="color:black;margin-left: 20%;margin-right: 15%;margin-top: 0%;margin-bottom: 0%;">
             <li style="font-family: 'Fredoka One', cursive;color:white"> <span style="color:#2d2153" >Mini</span> Lectores </li>
 
             <li>
@@ -282,10 +283,43 @@
             <li><a  style="color:white;font-size: 80%;" style="font-family: 'Roboto', sans-serif;" ><span>Contacto</span></a></li>
             <li><a  style="color:white;font-size: 80%;" style="font-family: 'Roboto', sans-serif;" ><span>LOGIN</span></a></li>
             <li><img style="width: 70%;" src="./images/redes.png" ></li><br>
-            <li style="color: #ffffff;font-size: 70%;margin-left: 30%;margin-right: 30%;" >Copyright Mini Lectores. Todos los derechos reservados</li>
+            <li id="copys2" style="color: #ffffff;font-size: 70%;margin-left: 30%;margin-right: 30%;margin-bottom: 2%;" >Copyright Mini Lectores. Todos los derechos reservados</li>
         </ul>
     
-    </div>  
+    </div> 
+
+    <!-- Scripts -->
+    <script>
+        /*Elimino el copyright de compra*/
+        var copys2 = document.getElementById('copys2');
+        window.addEventListener( "resize", function(){
+            if ( window.outerWidth < 800 ||  window.outerHeight < 800 ){ copys2.style.display='none'}
+            else{}
+        });
+        window.addEventListener( "resize", function(){ 
+            if ( window.outerWidth > 800 ||  window.outerHeight > 800 ) { copys2.style.display='block' }
+        });
+			
+
+        /*Elimino listnav*/
+        var list4 =  document.getElementsByClassName('esconder4');
+        
+        window.addEventListener( "resize", function(){
+            if ( window.outerWidth < 800 ||  window.outerHeight < 800 ){ 
+                for (var i=0; list4.length;i++ ){
+                    list4[i].style.display='none'
+                }
+            }else{}
+        });
+        window.addEventListener( "resize", function(){ 
+            if ( window.outerWidth > 800 ||  window.outerHeight > 800 ){ 
+                for (var i=0; list4.length;i++ ){
+                    list4[i].style.display=''
+                }
+            }else{}
+        });
+        
+    </script> 
 
 
 

@@ -41,8 +41,8 @@
 							<img class="image featured" src="images/Sin título-1.png" alt="niñoleyendo" style="margin: 0; padding-left: 20%;">
 						</div>
 						<div class="col-6 col-12-medium" style="padding:0%;padding-top:12% ;padding-left: 1%;">
-							<h1 id="h1bienvenido" style="margin: 0%;"> Bienvenidos al club <br><br> de lectura mas divertido </h1><br>
-							<h6 id="parrafoBienvenido" style="padding:0;margin-right: 10%;margin-top: 0%;align-content: stretch;">
+							<h1  id="h1bienvenido" style="margin: 0%;"> Bienvenidos al club <br><br> de lectura mas divertido </h1><br>
+							<h6  id="parrafoBienvenido" style="padding:0;margin-right: 10%;margin-top: 0%;align-content: stretch;">
 								Recibí cada mes en tu casa 2 libros para niños <br> especialmente seleccionados más otras sorpresas. <br> 
 								Hacemos envíos a todo el país.
 							</h6>											
@@ -271,7 +271,7 @@
 			<!--Footer naranja me falta hacerlo responsive -->
 				<div class="navabajo">
 		
-					<ul id="listadesaparece" style="color:black;margin-left: 20%;margin-right: 10%;margin-top: 0%;">
+					<ul id="listadesaparece" style="color:black;margin-left: 20%;margin-right: 10%;margin-top: 0%;margin-bottom: 0%;">
 						<li style="font-family: 'Fredoka One', cursive;color:white"> <span style="color:#2d2153" >Mini</span> Lectores </li>
 			
 						<li>
@@ -283,32 +283,24 @@
 						<li><a  style="color:white;font-size: 80%;" style="font-family: 'Roboto', sans-serif;" ><span>Contacto</span></a></li>
 						<li><a  style="color:white;font-size: 80%;" style="font-family: 'Roboto', sans-serif;" ><span>LOGIN</span></a></li>
 						<li><img style="width: 70%;" src="./images/redes.png" ></li><br>
-						<li style="color: #ffffff;font-size: 70%;margin-left: 30%;margin-right: 30%;margin-top: 0%;" >Copyright Mini Lectores. Todos los derechos reservados</li>
+						<li id="copys" style="color: #ffffff;font-size: 70%;margin-left: 30%;margin-right: 30%;margin-top: 0%;" ><span>Copyright Mini Lectores. Todos los derechos reservados</span></li>
 					</ul>
-
-					<!--Div Minilectores escondido-->
-					<div id="divresponsive" style="display: none;" >
-						<script>
-							let listadesaparece = document.getElementById('listadesaparece');
-							let divresponsive = document.getElementById('divresponsive');
-							if ( window.outerHeight < 700 && window.outerHeight < 700 ){
-								divresponsive.style.display='contents';
-								listadesaparece.style.display='none';
-							}else{}
-		
-						</script>
-							
-						<div>
-	
-							<ul style="color:black;margin-left: 30%;margin-right: 30%;margin-top: 0%;list-style: none;">
-								<li style="font-family: 'Fredoka One', cursive;color:#fff;"> <span style="color:#2d2153" >Mini</span> Lectores </li>
-							</ul>
-	
-						</div>
-	
-					</div>
 					
 				</div>
+
+
+				<!-- Script para eliminar copyrigth -->
+				<script>
+					/*Del index*/
+					var copy = document.getElementById('copys');
+					window.addEventListener( "resize", function(){
+						if ( window.outerWidth < 800 ||  window.outerHeight < 800 ){ copy.style.display='none'}
+						else{}
+					});
+					window.addEventListener( "resize", function(){ 
+						if ( window.outerWidth > 800 ||  window.outerHeight > 800 ) { copy.style.display='block' }
+					});
+				</script> 
 
 
 				

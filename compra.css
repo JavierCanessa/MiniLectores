@@ -2,7 +2,108 @@
 @import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Fredoka+One&family=Montserrat&family=Roboto&display=swap"); ()
 
 
+/*class navabajo mia*/
+/* Voy a fabricar el nav yo mismo */
+.navabajo{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font font-family: 'Roboto', sans-serif;
+}
+
+
+.navabajo, a {
+    /*position: absolute;*/
+    background-color: #ff5e00;
+    top: 3em;
+    left: 0;
+    width: 100%;
+    cursor: default;
+    margin-bottom: 0%;
+    font-family:'Roboto', sans-serif;
+}
+
+    .navabajo > ul > li {
+        display: inline-block;
+        padding-right: 2em;
+    }
+
+        .navabajo > ul > li:last-child {
+            padding-right: 0;
+        }
+
+        .navabajo > ul > li > a {
+            border: 0;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 400;
+            color: rgb(255, 255, 255);
+            outline: 0;
+            display: block;
+        }
+
+            .navabajo > ul > li > a:before {
+                display: inline-block;
+                background: #ffffff;
+                color: #ffffff;
+                width: 2.25em;
+                /*font-size: 0.8em;*/
+                height: 2.25em;
+                /*border-radius: 2.25em;*/
+                line-height: 2.1em;
+                /*text-align: center;*/
+                /*box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);*/
+                margin-right: 0.75em;
+                -moz-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
+                -webkit-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
+                -o-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
+                -ms-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
+                transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
+            }
+
+            .navabajo > ul > li > a > span {
+                -moz-transition: color 0.25s ease-in-out;
+                -webkit-transition: color 0.25s ease-in-out;
+                -o-transition: color 0.25s ease-in-out;
+                -ms-transition: color 0.25s ease-in-out;
+                transition: color 0.25s ease-in-out;
+                font-size: 0.85em;
+                letter-spacing: 3px;
+            }
+
+        .navabajo > ul > li > ul {
+            display: none;
+        }
+
+        .navabajo > ul > li.active > a:before,
+        .navabajo > ul > li:hover > a:before {
+            background: #ED786A;
+            color: #fff;
+        }
+
+        .navabajo > ul > li.active > a > span,
+        .navabajo > ul > li:hover > a > span {
+            color: #ED786A;
+        }
+
+        .navabajo > ul > li {
+            padding-right: 1.25em;
+        }
+
+        /* Medium */
+
+	.navabajoPanel{
+		display: none;
+	}
+
+	
+	/*Fin navabajo*/
+
 /* Page Wrapper */
+
 
 #page-wrapper > section {
     margin-bottom: 0;
